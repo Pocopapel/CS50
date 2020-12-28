@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    quote
+{% endblock %}
+
+{% block main %}
+    <div>
+            Insert the symbol of the stock you want to look up
+    </div>
+    <form action="/quote" method="POST">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="symbol" type="text">
+        </div>
+
+        <button class="btn btn-primary" type="submit">look up</button>
+    </form>
+{% endblock %}

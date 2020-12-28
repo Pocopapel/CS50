@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <ul>
+        <li> Company: {{value["name"]}}</li>
+        <li> Price per share: ${{value["price"]}}</li>
+        <li> Symbol: {{value["symbol"]}}</li>
+    </ul>
+{% endblock %}

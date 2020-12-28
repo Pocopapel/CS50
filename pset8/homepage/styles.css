@@ -1,0 +1,78 @@
+body{
+    background-color: slategrey;
+    font-family: "Helvetica";
+    padding-left:20px;
+    border-style:solid;
+}
+
+h1{
+    text-align:center;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 36px;
+
+}
+
+h2{
+    text-align:center;
+}
+
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.wrapper{
+    text-align:center;
+}
+button{
+    background-color:black;
+    color:darkolivegreen;
+    text-align:center;
+    margin:auto;
+    top:50%;
+}
+
+footer{
+    text-align:center;
+    background-color:black;
+    color:darkolivegreen;
+    width:100%;
+    bottom:0;
+    position:fixed;
+    left:0;
+}
+
+#links{
+    top:90%;
+    bottom: 0;
+    color:green;
+}
+
+#linkedin{
+    background-color: rgb(40,103,178);
+    color:white;
+}
+
+#github{
+    background-color: black;
+    color: white;
+}
+
+#topbar{
+    background-color: black;
+    color: white;
+    text-align:left;
+    width:100%;
+    padding:14px;
+    font-size:16px;
+    top:0;
+    text-decoration:none;
+    left:0;
+    margin-left:-20px;
+
+}
+#topbar a:hover{
+    background-color:black;
+    color:forestgreen;
+}

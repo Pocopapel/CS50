@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title> Yerba </title>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body>
+
+        <h1> Welcome to this page about Yerba Mate!</h1>
+
+        <p><img src="yerba.jpg" class='image'> </p>
+
+        <h2>Click any of these buttons for more information!</h2>
+        <div class='wrapper'>
+        <a href = 'health.html'><button>Health benefits</button></a>
+        <a href = 'preparation.html'><button>Preparation</button></a>
+        <a href = 'buy.html'><button>Get your own!</button></a>
+        </div>
+
+        <!-- survey buttons yes and 'no'(which disappears on mouseover)-->
+        <h3>Survey!</h3>
+        <p id="poll">Did you like this page & Yerba? <br>
+        <button onclick="pollresults()"> yes </button>
+        <div id="no"> <button onMouseOver="hide('no')" onMouseOut="show('no')" > no </button> </div>
+        </p>
+
+
+
+        <p id="links">
+            <div class="blink"> Links about the creator of this page: </div>
+
+            <a href='https://www.linkedin.com/in/mattiasbraams/'>
+                <button id="linkedin">LinkedIn</button>
+                </a>
+            <a href='https://github.com/Pocopapel'>
+                <button id="github">GitHub</button>
+                </a>
+
+        </p>
+
+        <footer> ©Copyright Mattias Braams, 2020</footer>
+
+        <script src ="script.js"></script>
+
+
+    </body>
+
+</html>
