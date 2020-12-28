@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Check
+{% endblock %}
+{% block main %}
+
+<div>Click here if any of the contacts you met tested positive and please provide the testdate</div>
+<form action="/check" method="POST">
+        <div class="form-group">
+            <select name="contact_pos">
+                {% for row in rows %}
+            <option>{{ row["contact"]}}</option>
+                {% endfor %}
+            </select>
+            <input class="form-control" type="date" name="date" placeholder="date of the test">
+            <button class="btn btn-primary" type="submit">submit</button>
+        <div class="form-group">
+</form>
+    <br>
+    <div>
+    {%  for row in rows_pos %}
+        <div style="background-color:red; color:white; font-size:20px; text-align:left; padding:10px; border:2px solid black;">
+            {{ row["name"] }} tested positive and might have been infectious when you met him/her!
+        </div>
+        <br>
+    {% endfor %}
+    </div>
+{% endblock %}

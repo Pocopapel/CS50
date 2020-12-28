@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add contact
+{% endblock %}
+
+{% block main %}
+    <form action="/add" method="POST">
+        <div class="form-group">
+            <input class="form-control" type="text" name="contact" placeholder="Person you met">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="date" name="date" placeholder="date">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" name="location" placeholder="location">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" name="memo" placeholder="Note to self:">
+        </div>
+        <button class="btn btn-primary" type="submit">submit</button>
+    </form>
+
+{% endblock %}
